@@ -2,7 +2,6 @@ import express from "express";
 
 const app = express();
 
-
 /** Helpers */
 const num = (x) => Number(x);
 const badNum = (x) => !Number.isFinite(num(x));
@@ -10,7 +9,7 @@ const error = (res, msg) => res.status(400).json({ ok: false, error: msg });
 
 /** Health (tu test lo usa) */
 app.get("/", (_req, res) => {
-  res.status(200).json({ status: "ok", service: "Hola Microservicio 2" });
+  res.status(200).json({ status: "ok", service: "Hola Microservicio" });
 });
 
 /** GET /calc/suma?a=5&b=7 */
