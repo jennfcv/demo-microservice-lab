@@ -9,7 +9,7 @@ const error = (res, msg) => res.status(400).json({ ok: false, error: msg });
 
 /** Health (tu test lo usa) */
 app.get("/", (_req, res) => {
-  res.status(200).json({ status: "ok", service: "Hola Microservicio" });
+  res.status(200).json({ status: "ok", service: "Hola Microservicio 2" });
 });
 
 /** GET /calc/suma?a=5&b=7 */
